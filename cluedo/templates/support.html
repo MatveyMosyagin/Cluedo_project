@@ -24,17 +24,21 @@
       <h1 class="display-4 fw-normal">Support</h1>
       <center><p style="max-width:50vw;text-align: center;  " class="fs-3 text-muted">If you have come up with some idea or found a bug, write below ...</p><center>
 
-          <form name="test" method="post" action="input1.php">
+          <form name="test" method="post">
         <p style="max-width:50vw;text-align: center;  " class="fs-5 text-muted"><b>Your name:</b><br>
-            <input type="text" size="40">
+            <input type="text" name="name" id="name" size="40">
         </p>
 
           <p style="max-width:50vw;text-align: center;  " class="fs-5 text-muted">Comment<Br>
-          <textarea name="comment" cols="40" rows="3"></textarea></p>
-         <p><input type="submit" value="Send">
-          <input type="reset" value="Clean"></p>
-          </form>
-          <img src="https://sun9-57.userapi.com/c4685/u57544668/101005291/x_4db8e460.jpg" alt="support" width="500" height="334">
+          <textarea name="comment" id="comment" cols="40" rows="3"></textarea></p>
+              </form>
+              <input type="submit" onClick="myFunction()" value="Send"/>
+            <script>
+                function myFunction() {
+                window.location.href="/success";
+                }
+            </script>
+          <center><img src="https://sun9-57.userapi.com/c4685/u57544668/101005291/x_4db8e460.jpg" alt="support" width="500" height="334"></center>
     </div>
 
 

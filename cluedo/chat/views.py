@@ -30,6 +30,10 @@ def support(request):
     return render(request, 'support.html')
 
 
+def success(request):
+    return render(request, 'success.html')
+
+
 def rules(request):
     return render(request, 'Rules.html')
 
